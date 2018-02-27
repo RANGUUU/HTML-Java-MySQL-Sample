@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#sampleTableHead,
+#sampleTable {
+  /* ここでテーブルサイズが決定する */
+  font-size:11px;
+  border-collapse: collapse;
+}
+
+#sampleTableHead {
+  width: calc(45rem - 17px);
+  table-layout: fixed;
+}
+
+#sampleTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#sampleTableHead th {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: silver;
+}
+
+#sampleTable td {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#sampleTable tr:nth-child(odd) {
+  background-color: white;
+}
+#sampleTable tr:nth-child(even) {
+	background: #EEEEEE;
+}
+
+.selectTr {
+	background: #FFCC99 !important;
+}
+
+#sampleTable tr:hover {
+  background-color: #fbff99;
+}
+
+.sampleTableScroll {
+  height: 200px;
+  overflow-y: auto;
+  width: 45rem;
+}
+
+input[name=my-text] {
+  width: 8.2rem;
+  margin: 0 0.6px 0 3.5px;
+  height: 1.5rem;
+}
+
+#inputArea {
+  height: 2rem;
+  width: 45rem;
+  padding: 0.25rem 0;
+}
+
+#buttonArea {
+  height: 4rem;
+  width: calc(45rem - 22px);
+  text-align: right;
+  padding: 1rem 0;
+}
+
+button {
+  height: 2rem;
+}
